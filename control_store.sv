@@ -1,7 +1,7 @@
 module control_store (
-    input [5:0] address;
-    output [22:0] ctrl_signals;
-)
+    input [5:0] address,
+    output [22:0] ctrl_signals
+);
 
 logic [22:0] ROM [0:63];
 
@@ -76,4 +76,4 @@ end
 
 assign ctrl_signals = ROM[address];
 
-endmodule 
+endmodule
