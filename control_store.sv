@@ -1,6 +1,6 @@
 module control_store (
-    input [5:0] address,
-    output [22:0] ctrl_signals
+    input logic [5:0] address,
+    output logic [22:0] ctrl_signals
 );
 
 logic [22:0] ROM [0:63];
