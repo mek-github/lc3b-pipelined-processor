@@ -3,7 +3,7 @@ module dependency_control_logic (
     input logic [2:0] sr1,
     input logic [2:0] sr2,
 
-    input logic sr1_neeeded,
+    input logic sr1_needed,
     input logic sr2_needed,
     input logic de_br_op,
 
@@ -20,7 +20,6 @@ module dependency_control_logic (
     input logic v_sr_ld_cc,
 
     output logic dep_stall
-
 ); 
 
     always_comb begin
